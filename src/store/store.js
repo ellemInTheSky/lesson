@@ -1,10 +1,8 @@
 import { configureStore } from "@reduxjs/toolkit";
-import postsReducer from "./slice/postSlice";
+import animeReducer from "./slice/wifuSlice";
 
-const store = configureStore({
+export const store = configureStore({
   reducer: {
-    posts: postsReducer,
+    anime: animeReducer,
   },
 });
-
-export default store;
